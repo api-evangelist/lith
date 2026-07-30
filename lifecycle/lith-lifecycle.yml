@@ -1,0 +1,45 @@
+generated: '2026-07-19'
+method: searched
+source: https://github.com/Lithium-Finance/lithium-smart-contracts, https://lith.finance/
+versioning:
+  scheme: contract-directory-version
+  current: EnquiryPool V3
+  docs: https://github.com/Lithium-Finance/lithium-smart-contracts
+  note: >-
+    The protocol versions its interface by shipping a new Enquiry Pool contract
+    generation side by side with the previous one — contracts/enquiry/v2/EnquiryPoolV2.sol
+    and contracts/enquiry/v3/EnquiryPoolV3.sol, each with its own AnswerLib/EnquiryLib
+    helpers. Prior generations remain deployed rather than being upgraded in place.
+deprecation:
+  policy_url: null
+  sunset_header: false
+  note: no published deprecation or sunset policy
+sla:
+  url: null
+  uptime_target: null
+status_page: null
+milestones:
+- date: '2021-06-01'
+  event: $5M raise for a decentralized oracle tracking private assets
+  source: https://www.coindesk.com/business/2021/06/01/lithium-raises-5m-for-decentralized-oracle-tracking-private-assets
+- date: '2022-12-08'
+  event: Mainnet beta launch announced
+  source: https://markets.financialcontent.com/ibtimes/article/newsdirect-2022-12-8-lithium-finance-announcing-its-mainnet-beta-launch
+activity_signals:
+  last_contract_push: '2023-04-25'
+  last_repo_update: '2023-11-26'
+  docs_last_updated: '1-2 years ago (per GitBook page footers)'
+  dead_hosts:
+  - api.testnet.lith.finance
+  - docs.lith.finance
+  - app.lith.finance
+  legacy_endpoints:
+  - url: https://api.thegraph.com/subgraphs/name/jon-lith/polygon-enquiry-beta-prod
+    kind: TheGraph subgraph (GraphQL)
+    status: unreachable (301, hosted-service sunset)
+  assessment: >-
+    All observable first-party surfaces have been static since 2023: no commits, no
+    dated changelog, and the referenced API/app/docs subdomains no longer resolve in
+    DNS. Only the marketing site, the mirrored GitBook docs, the governance forum and
+    the contracts repository remain reachable. Treat the protocol as dormant.
+deprecated_operations: []

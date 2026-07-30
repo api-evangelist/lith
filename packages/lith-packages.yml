@@ -1,0 +1,32 @@
+generated: '2026-07-19'
+method: searched
+source: npm registry search, PyPI, https://github.com/Lithium-Finance/lithium-smart-contracts
+packages: []
+result: none-found
+notes: >-
+  No first-party Lithium Finance client library is published to any public package
+  registry. The only first-party code artifact is the Hardhat contract workspace
+  `lithium-smart-contracts`, whose package.json declares name "lithium-smart-contracts"
+  version 1.0.0 with no publish configuration and only devDependencies (hardhat,
+  ethers, @openzeppelin/contracts) — it is a build workspace, not a distributed SDK.
+  Integrators interact with the protocol through the deployed Solidity contracts
+  using a generic web3 library (ethers/web3.js), not through a Lithium package.
+registries_searched:
+- registry: npm
+  query: lithium-finance, lith.finance
+  result: no first-party package (matches are unrelated projects)
+- registry: pypi
+  query: lithium-finance, lith-finance
+  result: 404
+- registry: github
+  query: Lithium-Finance org
+  result: 1 public repo (lithium-smart-contracts, Solidity, MIT, last pushed 2023-04-25),
+    not published to a registry
+source_code:
+- name: lithium-smart-contracts
+  url: https://github.com/Lithium-Finance/lithium-smart-contracts
+  language: Solidity
+  license: MIT
+  toolchain: hardhat
+  official: true
+  published_to_registry: false

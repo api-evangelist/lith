@@ -1,0 +1,51 @@
+generated: '2026-07-19'
+method: derived
+source: https://github.com/Lithium-Finance/lithium-smart-contracts, https://lith.finance/docs-sub/index
+notes: >-
+  Lithium Finance publishes no HTTP API, so the usual web-API standards
+  (OAuth2/OIDC, RFC 9457, JSON:API, pagination, idempotency) are not applicable
+  rather than failed. Conformance here is assessed against the on-chain and
+  smart-contract standards the protocol actually implements.
+standards:
+- id: erc20
+  conforms: true
+  evidence: contracts/lith-token/LithiumToken.sol implements the ERC-20 interface
+    (contracts/lith-token/interfaces/IERC20.sol, token/ERC20.sol)
+- id: openzeppelin-contracts
+  conforms: true
+  evidence: package.json devDependency @openzeppelin/contracts 4.5.0 used across the
+    contract set
+- id: solidity-evm
+  conforms: true
+  evidence: Hardhat/Solidity workspace targeting EVM chains; mainnet-beta launched on
+    Polygon
+- id: snapshot-offchain-governance
+  conforms: true
+  evidence: DAO governance space https://snapshot.org/#/lithfinance.eth referenced from
+    the site and the governance docs
+- id: third-party-security-audit
+  conforms: true
+  evidence: CertiK project page https://www.certik.com/projects/lithium linked from
+    lith.finance (page is Cloudflare-protected; audit contents not machine-verified)
+- id: responsible-disclosure
+  conforms: true
+  evidence: published bug bounty program at https://lith.finance/docs-sub/guides/bug-bounty
+    with a 4-level severity scale and OWASP risk rating methodology
+- id: oauth2
+  conforms: false
+  evidence: not applicable — no HTTP API or authorization server
+- id: openid-connect
+  conforms: false
+  evidence: not applicable — /.well-known/openid-configuration returns 404
+- id: rfc9457-problem-details
+  conforms: false
+  evidence: not applicable — no HTTP API
+- id: rfc9116-security-txt
+  conforms: false
+  evidence: /.well-known/security.txt returns 404
+compliance_program:
+  published: false
+  note: >-
+    No SOC 2, ISO 27001, PCI DSS, HIPAA or FedRAMP certification is published, and
+    no trust center exists. The only third-party assurance signal is the CertiK
+    smart-contract audit listing.

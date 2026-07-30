@@ -1,0 +1,25 @@
+generated: '2026-07-19'
+method: searched
+source: https://lith.finance/
+host: https://lith.finance
+notes: >-
+  Lithium Finance publishes no /.well-known/ discovery surface. Every standard
+  document was probed and returned 404. The API hosts referenced in the site
+  markup (api.testnet.lith.finance) no longer resolve in DNS, so they could not
+  be probed. Recorded absence is valid data, not a gap in the probe.
+documents:
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
+unreachable_hosts:
+- host: api.testnet.lith.finance
+  referenced_in: https://lith.finance/ (site markup)
+  dns: NXDOMAIN
+  note: testnet API host referenced by the mainnet-beta app; no longer resolves
