@@ -1,8 +1,31 @@
 aid: lith
-name: Lith
-description: 'Lith is a company surfaced as a portfolio company of pantera-capital and added to the API
-  Evangelist network as a stub for enrichment. Sector: crypto. This profile is a lead awaiting the enrichment
-  pipeline.'
+name: Lithium Finance
+description: >-
+  Lithium Finance is a decentralized asset-pricing protocol that combines machine
+  learning with collective intelligence to value illiquid assets, with an initial
+  focus on NFTs. Quantitative models analyze historical trading data to produce a
+  base valuation and to flag cases where machine learning struggles — such as rare
+  NFTs with little trading history — and the protocol then incentivizes a community
+  of Price Experts to submit pricing estimates through on-chain Pricing Quests. Two
+  ecosystem roles drive the network: Price Seekers (data consumers such as projects,
+  lenders, issuers and analysts) fund prize pools to post asset-pricing enquiries,
+  and Price Experts (brokers, traders and market participants) answer them for
+  bounties. The economy runs on the LITH token plus non-transferable Reputation
+  Points, and the protocol is governed by the Lithium DAO via Snapshot. The public
+  surface is a set of Solidity Enquiry Pool, Reputation and LITH token contracts
+  rather than a hosted web API.
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://lith.finance/static/images/lithium-finance-socials-banner.png
 url: https://raw.githubusercontent.com/api-evangelist/lith/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +35,18 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Crypto
+- DeFi
+- Oracles
+- NFT
+- Asset Valuation
+- Smart Contracts
+- Machine Learning
+- DAO
+- Blockchain
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,3 +56,46 @@ maintainers:
 common:
 - type: Website
   url: https://lith.finance/
+- type: Documentation
+  url: https://lith.finance/docs-sub/index
+- type: GettingStarted
+  url: https://lith.finance/docs-sub/overview/how-it-works
+- type: GitHubOrganization
+  url: https://github.com/Lithium-Finance
+- type: SourceCode
+  url: https://github.com/Lithium-Finance/lithium-smart-contracts
+- type: Support
+  url: https://discord.gg/lithiumfinanceofficial
+- type: Community
+  url: https://lith.finance/forum-sub/index
+- type: Twitter
+  url: https://twitter.com/lithiumfinance
+- type: Telegram
+  url: https://t.me/lithiumfinanceofficial
+- type: Governance
+  url: https://snapshot.org/#/lithfinance.eth
+- type: TermsOfService
+  url: https://lith-finance.notion.site/Lithium-Finance-Terms-of-Service-c77aa2f729f74045b7871c4326c63e68
+- type: PrivacyPolicy
+  url: https://lith-finance.notion.site/Lithium-Finance-Privacy-Policy-57cc4ab92c4c4eca83fc794c3f66e491
+- type: Security
+  url: https://lith.finance/docs-sub/guides/bug-bounty
+- type: VulnerabilityDisclosure
+  url: security/lith-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/lith-domain-security.yml
+- type: WellKnown
+  url: well-known/lith-well-known.yml
+- type: Conformance
+  url: conformance/lith-conformance.yml
+- type: Lifecycle
+  url: lifecycle/lith-lifecycle.yml
+- type: Packages
+  url: packages/lith-packages.yml
+- type: LLMsTxt
+  url: llms/lith-llms.txt
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
